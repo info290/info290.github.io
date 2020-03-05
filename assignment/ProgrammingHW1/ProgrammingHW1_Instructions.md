@@ -201,7 +201,7 @@ Drop the `city` and `subtotal` index after the exercise is completed.
 b) **[25pt]** Creating Indexes for Conjunction and Disjunctions
 - **[2.5pt]** Building on top of our query Q3a from earlier, write a query that computes the average of `subtotal` in the `Sales.Salesorderheader` table for all orders with an address from the `city` Toronto *and* have `addressid` higher than 450. Note that, like in Q3a this requires a join between the `Person.Address` and `Sales.Salesorderheader` table, where `Sales.Salesorderheader.billtoaddressid` and `Person.Address.addressidRecord` are equal (or this can be accomplished by a subquery). Record the query execution time and inspect the query plan. 
      - Add an index for  `city`. Record the query execution time and inspect the query plan. Drop the index on `city` after this exercise.
- - **[2.5pt]** Write a query that computes the average of `subtotal` in the `Sales.Salesorderheader` for all orders with an address from the `city` Toronto *or* have `stateprovinceid` is equal to 34. Record the query execution time and inspect the query plan.
+ - **[2.5pt]** Write a query that computes the average of `subtotal` in the `Sales.Salesorderheader` for all orders with an address from the `city` Toronto *or* with `stateprovinceid` is equal to 34. Record the query execution time and inspect the query plan.
     - Add an index for `city`. Record the query execution time and inspect the query plan. Drop the index on `city` after this exercise.
 - **[10pt]** Explain why the AND query made use of the index but not the OR query did not.  
 - **[2.5pt]** You can create a *multicolumn index* on more than one column in a table by separating the column names with comma within the parenthesis as follows:
@@ -211,7 +211,7 @@ b) **[25pt]** Creating Indexes for Conjunction and Disjunctions
     ```
     - Write a query to create a multicolumn index on `city` and `addressid` then measure the performance.
     - Run the OR query from earlier. Record the query execution time and inspect the query plan. 
-- **[10pt]** Explain the differences between the query execution plan with only a single index on `city` versus the one with the multicolumn index. In particular, exaplain how the multicolumn index was used in the query execution.
+- **[10pt]** Explain the differences between the query execution plan with only a single index on `city` versus the one with the multicolumn index. In particular, explain how the multicolumn index was used in the query execution.
 
 c) **[10pt]** Cost of Index Maintenance : 
 
