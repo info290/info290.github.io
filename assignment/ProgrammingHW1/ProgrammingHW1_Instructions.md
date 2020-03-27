@@ -209,7 +209,7 @@ b) **[25pt]** Creating Indexes for Conjunction and Disjunctions
     CREATE INDEX index_name
     ON table_name(a,b,c,...);
     ```
-    - Write a query to create a multicolumn index on `city` and `addressid` then measure the performance.
+    - Write a query to create a multicolumn index on `city` and `stateprovinceid` then measure the performance.
     - Run the OR query from earlier. Record the query execution time and inspect the query plan. 
 - **[10pt]** Explain the differences between the query execution plan with only a single index on `city` versus the one with the multicolumn index. In particular, explain how the multicolumn index was used in the query execution.
 
