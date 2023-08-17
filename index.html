@@ -80,11 +80,13 @@
         <ul class="nav navbar-nav">
         <li><a href="index.html#">Home</a></li>
         <li><a href="index.html#description">About</a></li>
-        <li><a href="index.html#syllabus">Syllabus</a></li>
-        <li><a href="index.html#grading">Grading</a></li>
         <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="index.html#grading">Grading</a></li>
+        <li><a href="index.html#papers">Readings</a></li>
         <li><a href="index.html#project">Project</a></li>
-        <li><a href="index.html#assignment">Assignments</a></li>
+        <li><a href="index.html#presentations-instructions">Presentations</a></li>
+        <li><a href="index.html#class-review-instructions">Reviews</a></li>
+        
         </ul>
       </div>
     </div>
@@ -97,16 +99,24 @@
           <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Other Info</button>
         </p>
         <div class="jumbotron">
-            <h2>Info 290T: Human-in-the-loop Data Mgmt.</h2>
-            <div class="row">
-              <!--<div class="col-md-4">
-               <img src="images/courseimage.png" class="img-responsive img-rounded" style="margin-bottom: 15px;">  
-              </div>-->
+            <h2>Info 290T: Human-Centered Data Management.</h2>
+            <!--<div class="row">
               <div class="col-md-8" style="width: 100%;">
                 <p>
-                <img src="images/courseimage.png" class="img-responsive img-rounded" style="margin-bottom: 15px;width: 75%;">  
-                This class will be a modern take on a traditional data management class, covering the basics of dealing with data at scale from a user-centered perspective, over the entire life cycle of data management, ranging from data cleaning, extraction, and integration, to analysis and exploration, to machine learning and collaboration. </p>
+                <img src="images/happyhumanheads.png" class="img-responsive img-rounded" style="margin-bottom: 15px;width: 50%; ">  
+                This is a research-oriented graduate class on human-centered aspects in data management and analysis across the end-to-end data science/AI lifecycle. The class will entail reading and discussion of classical and modern research papers in this space. As part of this class, students will undertake a research project in this space. Students taking the class should have taken a database or data engineering class, at the level of INFO 258 / DATA 101 / COMPSCI 186, and/or have experience working with database or data engineering tools. </p>
               </div>             
+            </div>
+            -->
+            <div class="row">
+              <div class="col-md-4">
+               <img src="images/happyhumanheads.png" class="img-responsive img-rounded" style="margin-bottom: -25px;">  
+             </div> <!-- /span2 -->
+             <div class="col-md-8">
+              <p>
+                This is a research-oriented class on human-centered aspects in data management and analysis across the end-to-end data science/AI lifecycle. The class will entail reading and discussion of classical and modern research papers in this space. As part of this class, students will undertake a research project in this space. Students taking the class should have taken a database or data engineering class, at the level of INFO 258 / DATA 101 / COMPSCI 186, and/or have experience working with database or data engineering tools. 
+              </p>
+             </div>
             </div>
         </div>
 
@@ -116,13 +126,20 @@
         <div class="row">
           <div class="col-md-12">
             <h2> Description </h2>
-            <p>The class will not assume any background in databases, and will start with a quick overview of <b>the classics</b>: the relational model, SQL, views and indexes, query processing and optimization, and transactions, <b>all from a user perspective</b>.</p>
+            <p> This class emphasizes the central role of humans in data management. We will collectively explore a range of research papers in this space, drawn from the leading data management and human-computer interaction (HCI)/visualization
+            venues. We will cover a range of technologies 
+            and methodologies.</p>
             
-            <p>Then, the class will cover a range of <b>modern or non-traditional data systems</b>. We will cover some subset of: <i>graph processing systems, dataframe systems, map-reduce and other distributed processing systems, spreadsheet systems, information retrieval and search systems, document stores, column stores, and stream processing systems</i>. We will also cover <b>techniques or aspects essential to modern data systems</b>, such as: <i>usability concerns, compression and data encoding formats, data cleaning and integration, approximation and sketching, summarization (OLAP and visualization), and managing security and privacy.</i> </p>
+            <p>From a technology standpoint, we will explore
+              some or all of the following, time permitting: visual analytics systems, visualization recommendation systems, spreadsheet systems, data cleaning and transformation systems, notebook-centric analysis tools, SQL query builders, explanation and provenance systems, data discovery systems, gestural interfaces, approximate query processing systems, predictive materialization systems, speech and natural language querying systems, text and video analysis systems, semi-structured data systems. We will also explore papers that study human perception and behavior as it pertains to data management. The emphasis will be on a mix of human-centric concerns, interface ideas, and scalable data processing ideas (all with an eye towards the end user).</p>
 
-            <p>The class will mix traditional lectures and assignments (both written and programming-oriented), along with a class project, which could be research or programming-oriented. Experience with programming, a basic understanding of computer systems, data structures, and algorithms expected. </p>
+            <p>There are multiple goals from this class. First, for those whom this is a first exposure to research papers in data management and HCI, we will learn about how to read and critically evaluate research papers from multiple perspectives (more on this later). Second, we will learn about multiple state-of-the-art techniques. We will explore the design of novel interfaces for data management concerns and the design of novel scalability techniques that focus on humans-in-the-center. Third, we will learn about the process of designing, validating, and evaluating ideas in this space. 
+            </p>
+            
+            <p>The class will center around discussion. We will be employing
+            a role-playing approach to the class. More on this <a href="#presentations-instructions">here</a>.</p>
 
-            <p><b>Since this is the first time this class is being offered, everything, including the breakdown of topics and grading is tentative; please expect hiccups if you're taking the class, and apologies for any issues in advance!</b></p>
+            <p><b>Since this is the first time this class is being offered, and the first time we're trying out a role-playing activity, everything, including the breakdown of topics and grading is tentative; please expect hiccups if you're taking the class, and apologies for any issues in advance!</b> </p>
           </div> 
         </div>
 
@@ -140,184 +157,190 @@
               <col style="width: 290px">
               <col style="width: 182px">
               </colgroup>
-                <tr>
-                  <th class="tg-0pky">Date</th>
-                  <th class="tg-0pky">Topic</th>
-                  <th class="tg-0pky">Notes</th>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">1/22</td>
-                  <td class="tg-0pky">Course Intro</td>
-                  <td class="tg-0pky"><a href="slides/01-course-intro.pdf">Course intro</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">1/27</td>
-                  <td class="tg-0pky">The Classics: relational algebra and SQL</td>
-                  <td class="tg-0pky"><a href="slides/02-rel-algebra.pdf">Relational algebra</a>  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">1/29</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"><a href="slides/03-SQL-intro.pdf">SQL intro;</a> <br/> <a href="https://www.postgresqltutorial.com/postgresql-sample-database/">DVD rental dataset</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/3</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"><a href="slides/04-SQL-subqueries.pdf">SQL subqueries</a> </td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/5</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"><a href="slides/05-SQL-aggregation.pdf">SQL aggregation;</a> <br/> <a href="slides/06-SQL-update.pdf">SQL modifications;</a> <br/> <a href="slides/07-SQL-DDL.pdf">SQL DDL;</a> <br/> 
-                  <a href="assignment/HW1/HW1.pdf">Assignment #1</a> posted</td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/10</td>
-                  <td class="tg-0pky">The Classics: database design</td>
-                  <td class="tg-0pky"><a href="slides/08-Database-Design.pdf">Database design</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/12</td>
-                  <td class="tg-0pky">The Classics: views, constraints/triggers</td>
-                  <td class="tg-0pky"><a href="slides/09-Constraints-Views.pdf">Views, constraints, triggers</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/17</td>
-                  <td class="tg-0pky">HOLIDAY: Presidents' Day</td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/19</td>
-                  <td class="tg-0pky">The Classics: indexing and query optimization</td>
-                  <td class="tg-0pky"><a href="slides/10-indexes.pdf">Indexing</a><br/>
-                  Written assignment #1 due 2/19 midnight</td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/24</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"><a href="slides/11-query-processing.pdf">Query processing;</a><br/>
-                  <a href="slides/12-query-optimization.pdf">Query optimization</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">2/26</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/2</td>
-                  <td class="tg-0pky">The Classics: transactions &amp; recovery</td>
-                  <td class="tg-0pky"><a href="slides/13-transactions.pdf">Transactions;</a><br/><a href="https://github.com/info290/info290.github.io/blob/master/assignment/ProgrammingHW1/ProgrammingHW1_Instructions.md">Programming Assignment #1</a> posted</td></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/4</td>
-                  <td class="tg-0pky">(contd.)</td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/9</td>
-                  <td class="tg-0pky">Data preparation: semi-structured data</td>
-                  <td class="tg-0pky"><a href="slides/14-semistructured.pdf">Semistructured data</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/11</td>
-                  <td class="tg-0pky">Class Canceled </td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/16</td>
-                  <td class="tg-0pky">Contd.</td>
-                  <td class="tg-0pky"><a href="slides/install-script.txt">Installation script</a>;<br/>
-                  <a href="slides/mongo-demo.ipynb">MongoDB Demo Notebook</a>;<br/>
-                  <a href="slides/prize_split.json">Raw data</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/18</td>
-                  <td class="tg-0pky">Data preparation: unstructured data</td>
-                  <td class="tg-0pky"><a href="slides/15-unstructured.pdf">Unstructured data</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/23</td>
-                  <td class="tg-0pky">HOLIDAY: Spring Break</td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0lax">3/25</td>
-                  <td class="tg-0lax">HOLIDAY: Spring Break</td>
-                  <td class="tg-0lax"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">3/30</td>
-                  <td class="tg-0pky">Data preparation: unstructured data (contd.) <br/>Data exploration: spreadsheets </td>
-                  <td class="tg-0pky">Midterm report due 3/30 midnight; <br/>Prog. assignment #1 due 3/30 midnight;<br/>
-                  <a href="slides/16-spreadsheets.pdf">Spreadsheets</a>; <a href="slides/simple-demo.xlsx">Demo spreadsheet 1</a>; <a href="slides/weather.xlsx">Demo spreadsheet 2</a> 
-                  </td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/1</td>
-                  <td class="tg-0pky">Data exploration: spreadsheets (contd.)</td>
-                  <td class="tg-0pky"></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/6</td>
-                  <td class="tg-0pky">Data exploration: dataframes</td>
-                  <td class="tg-0pky"><a href="slides/17-dataframes.pdf">Dataframes</a>;<br/>
-                    <a href="slides/Simple-Pandas-Example.ipynb">Pandas demo notebook;</a><br/>
-                    <a href="slides/relational-mappings.ipynb">Relational mappings;</a> <a href="slides/jhu-data.csv">COVID-19 data</a>;<br/>
-                  <a href="https://github.com/info290/info290.github.io/blob/master/assignment/ProgrammingHW2/ProgrammingHW2_Instructions.md">Programming Assignment #2</a> posted</td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/8</td>
-                  <td class="tg-0pky">Data exploration: OLAP, summarization, and visualization<br/>
-                  <strike>Data exploration: data cleaning and integration</strike></td>
-                  <td class="tg-0pky"><a href="slides/18-OLAP-summarization-vis.pdf">OLAP, summarization and vis.</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/13</td>
-                  <td class="tg-0pky">Data exploration: OLAP, summarization, and visualization (contd.)</td>
-                  <td class="tg-0pky"></td>                
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/15</td>
-                  <td class="tg-0pky">Batch analytics/OLAP: column stores and data compression </td>
-                  <td class="tg-0pky"><a href="slides/19-compression-col-stores.pdf">Compression and column stores.</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/20</td>
-                  <td class="tg-0pky">Batch analytics/OLAP: column stores and data compression (contd.) <br/>
-                  Batch analytics: parallel data processing and map-reduce</td>
-                  <td class="tg-0pky"><a href="slides/20-parallel-map-reduce.pdf">Map-Reduce and parallel data processing;</a><br/>
-                  <a href="slides/mongo-mapreduce-demo.ipynb">Map-Reduce in MongoDB: demo notebook</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/22</td>
-                  <td class="tg-0pky">Batch analytics: parallel data processing and map-reduce (contd.)</td>
-                  <td class="tg-0pky">Programming assignment #2 due 4/22 midnight;<br><a href="assignment/HW2/HW2.pdf">Written assignment #2</a> posted</td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/27</td>
-                  <td class="tg-0pky">Real-time analytics: streaming, sketching, and approximation</td>
-                  <td class="tg-0pky"><a href="slides/21-streaming-sketching.pdf">Approximation and streaming systems.</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">4/29</td>
-                  <td class="tg-0pky">Real-time analytics: streaming, sketching, and approximation (contd.)<br/>
-                                      Special topics: graph processing and ML Systems</td>
-                  <td class="tg-0pky"><a href="slides/22-graphs.pdf">Graph management/processing systems.</a></td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">5/4</td>
-                  <td class="tg-0pky">Special topics: graph processing and ML Systems (contd.)</td>
-                  <td class="tg-0pky">Written assignment #2 due 5/4 midnight</td>
-                </tr>
-                <tr>
-                  <td class="tg-0pky">5/6</td>
-                  <td class="tg-0pky">Special topics: security and privacy</td>
-                  <td class="tg-0pky"><a href="slides/23-security-privacy.pdf">Security and Privacy;</a>  <br/>
-                  <a href="slides/24-summary.pdf">Summary</a><br/>
-                  Final project presentations and report due 5/9 midnight</td>
-                </tr>
+                <thead>
+  <tr>
+    <th>Date</th>
+    <th>Topic</th>
+    <th>Notes</th>
+    <th>Presenter</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>8/24</td>
+    <td>Introduction</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8/29</td>
+    <td>No Class: VLDB</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>8/31</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/12</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/14</td>
+    <td></td>
+    <td>Project Proposal Due 14th</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/19</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/21</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/26</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>9/28</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/10</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/12</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/17</td>
+    <td></td>
+    <td>Intermediate Report Due 17th</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/19</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/24</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/26</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>10/31</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/9</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/14</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/16</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/21</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/23</td>
+    <td>Thanksgiving Holiday</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/28</td>
+    <td>Final Project Presentations</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>11/30</td>
+    <td>Final Project Presentations</td>
+    <td>Final Project Report Due 12/3</td>
+    <td></td>
+  </tr>
+</tbody>
               </table>
           </div>
         </div>   
@@ -325,49 +348,257 @@
          <a name="relationship"></a>
         <div class="row">
           <div class="col-md-12">
-            <h2> Relationship to INFO257 </h2>
-            <p> This class is meant to be roughly equivalent to INFO257 (Database Systems), and if you are a MIMS student, you are free to pick either one to fulfill requirements. That class is a more standard, polished take on database systems, while this class is a more modern take, emphasizing user-centered aspects (but beware of hiccups that come with a new class!) </p>
+            <h2> Requirements </h2>
+            <p> The official class requirements state "Students taking the class should have taken a database or data engineering class, at the level of INFO 258 / DATA 101 / COMPSCI 186, and/or have experience working with database or data engineering tools." 
+            </p>
+            <p>
+            Given the varied backgrounds of students coming into this class, we are willing to be flexible in this regard, but we will expect that you will know or be able to pick up missing pieces as we go along — to the extent that it ensures that you can take part in the paper discussions, presentations, and reviews, as well as the research project. 
+            </p>
+            <p>
+            We will expect that you have experience with data science tooling (such as dataframe and visualization libraries, and computational notebooks), databases (both from a query language standpoint, but also performance aspects: query optimization, materialized view maintenance, indexing). If you struggle with SQL or have not heard of query optimization, I encourage taking a database class first. Experience with research or reading research papers is not a must. </p>
           </div> 
         </div>
     
-        <a name="syllabus"></a>
-        <div class="row">
-          <div class="col-md-12">
-            <h2> Reading/Textbook </h2>
-            <p> Since this class is a modern take on data management, emphasizing a user perspective, there isn't a good textbook that covers all the topics
-            in the class. The topics covered early on in the class, i.e., "the classics", are adequately handled in most database textbooks. One appropriate 
-            resource is "Database Systems: The Complete Book" by Garcia-Molina, Ullman, and Widom. The modern topics are typically not adequately covered
-            in database textbooks. We will provide supplementary readings if there is interest. </p>
-          </div> 
-        </div>
+       <a name="papers"></a>
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Tentative List of Papers </h2>
+          <h3> Theme 1: Data Exploration (6) </h3>
+            <h4> Visual Analytics Systems + Next Generation: Visualization Search and Recommendation </h4>
+              <ul>   
+                <li><a href="papers/polaris.pdf">Polaris: A System for Query, Analysis, and Visualization of Multidimensional Relational Databases</a></b></li>
+                <li>Expressive Time-Series Querying by Hand-drawn Visual Sketches</li>
+                <li><a href="">SeeDB: Efficient Data-Driven Visualization Recommendations to Support Visual Analytics</a></li>
+                <li>Optional: <a href="papers/voyager.pdf">Voyager: Exploratory Analysis via Faceted Browsing of Visualization Recommendations</a></li>  
+                <li>Optional: <a href="">Show Me: Automatic Presentation for Visual Analysis</a></li>
+                <li>Optional: <a href="papers/zenvisage.pdf"> Effortless Data Exploration with zenvisage: An Expressive and Interactive Visual Analytics System</a></li>
+                <li>Optional: Voyager 2: Augmenting Visual Analysis with Partial View Specifications</li>
+            </ul>
+            <h4> Perceptual Approximation</h4>
+            <ul>
+                <li>Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations</li>
+                <li><a href="papers/incvisage.pdf">I’ve Seen “Enough”: Incrementally Improving Visualizations to Support Rapid Decision Making</a></li>
+                <li>Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data</li>
+                <li>Optional: M4: A Visualization-Oriented Time Series Data Aggregation</li>
+                <li>Optional: <a>How Progressive Visualizations Affect Exploratory Analysis</a></li>
+                <li>Optional: <a href="papers/trust-fisher.pdf">Trust Me, I’m Partially Right: Incremental Visualization Lets Analysts Explore Large Datasets Faster</a> </li>
+                <li>Optional: <a href="papers/incremental-fisher.pdf">Incremental, Approximate Database Queries and Uncertainty for Exploratory Visualization </a></li>
+                <li>Optional: <a href="papers/immens.pdf">imMens: Real-time Visual Querying of Big Data</a> </li>
+            </ul>
+          
+          <h3> Theme 2: Data Manipulation (4) </h3>
+            <h4> Spreadsheets and Direct Manipulation </h4>
+            <ul>
+                <li>Benchmarking Spreadsheet Systems</li>
+                <li>Sigma Worksheet: Interactive Construction of OLAP Queries</li>
+                <li>Optional: Hillview: A trillion-cell spreadsheet for big data</li>
+                <li>Optional: NOAH: Interactive Spreadsheet Exploration with Dynamic Hierarchical Overviews</li>
+                <li>Optional: Expressive Query Construction through Direct Manipulation of Nested Relational Results</li>
+                <li>Optional: <a href="">Data-Spread: Unifying Databases and Spreadsheets</a></li>
+                <li>Optional: Characterizing Scalability Issues in Spreadsheet Software Using Online Forums</li>
+            </ul>
+            <h4> Data Cleaning and Transformation </h4>
+            <ul>
+                <li><a href="papers/wrangler.pdf">Wrangler: interactive visual specification of data transformation scripts</a></li>
+                <li><a href="papers/profiler.pdf">Profiler: Integrated Statistical Analysis and Visualization for Data Quality Assessment</a> </li>
+                <li>Optional: <a href="papers/flash-extract.pdf">FlashExtract: A Framework for Data Extraction by Examples</a> </li>
+                <li>Optional: <a href="papers/potters-wheel.pdf">Potter’s Wheel: An Interactive Data Cleaning System </a></li>
+                <li>Optional: Predictive Interaction for Data Transformation</li>
+                <li>Optional: Data Cleaning: Overview and Emerging Challenges</li>
+            </ul>
 
-        <a name="grading"></a>
-        <div class="row">
-          <div class="col-md-12">
-             <h2> Breakdown (tentative) </h2>
-             <p>The class will involve <b>five assignments (three written and two programming assignments), plus a semester-long project</b>. 
-                <ul>
-                <li> Written Assignments (30%): There will be three written assignments of 10% each, typically due on Friday midnight. Each written assignment is meant to ensure understanding of roughly 1/3rd of the class content, and will contain a list of questions. Responses should be written in a way that succinctly describes the solution or concept.</li>
-                <li> Programming Assignments (30%): There will be two programming assignments of 15% each, typically due Friday midnight. The programming assignments are meant to provide hands-on experience working on classical and modern data systems. The programming assignments is meant to be done in teams of two, but please talk to us in case of exceptions. </li>
-                <li> Project (35%): The project is meant to test application of class material in new settings, or extending the class materials in various ways. The project will either involve research, or development, or both. We will provide feedback regarding what would be an acceptable project topic as the class proceeds. The project is meant to be done in teams of two, but please talk to us in case of exceptions.
-                  <ul>
-                  <li> Midterm report (5%, due 3/30 midnight)</li> 
-                  <li> Final report + presentation (30%, report due: 05/01 midnight; presentation slides due: 4/27 prior to class) </li>   
-                  </ul>
-                </li>
-                <li> Class participation (5%): To incentivize participation in class, 5% of the class grade will be reserved for class participation. </li>
-                </ul>
-             </p>
-             <p>Late Policy: Students are allowed to use up to <b>four late days</b>, to be used in any way that makes sense, without any explanation necessary. Any submission after the deadline will be rounded up to the closest day (i.e., 24 hour window) -- so even one hour late will count as the use of a full day. After four late days, students will lose 1% of the grade per day late. In case of medical issues, please contact the instructors as soon as you are able.</p>
-         </div> 
+          <h3> Theme 3: Beyond GUIs: Other No-Code Interface Modalities (3) </h3>
+            <h4> Touch and Gesture </h4>    
+            <ul>    
+                <li><a href="papers/gesturedb.pdf">Gestural Query Specification</a></li>
+                <li>Optional: <a href="papers/dbtouch.pdf">dbTouch: Analytics at your Fingertips</a></li>
+                <li>Optional: PanoramicData: Data Analysis through Pen & Touch</li>
+            </ul>
+            <h4> Natural Language & Speech </h4>
+            <ul>
+                <li>DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization </li>
+                <li>SpeakQL: Towards Speech-driven Multimodal Querying of Structured Data</li>
+                <li>Optional: A Holistic Approach for Query Evaluation and Result Vocalization in Voice-Based OLAP</li>
+                <li>Optional: ShapeSearch: A Flexible and Efficient System for Shape-based Exploration of Trendlines</li>
+                <li>Optional: NL4DV: Toolkit for Generating Analytic Specs for Data Vis from Natural Language Queries</li>
+                <li>Optional: Eviza: A Natural Language Interface for Visual Analysis</li>
+                <li>Optional: Bridging the Semantic Gap with SQL Query Logs in Natural Language Interfaces to Databases</li>
+            </ul>
+          
+          <h3> Theme 4: No-Code-meets-Code (4) </h3>
+            <h4> SQL Query Construction </h4>
+            <ul>
+                <li><a href="papers/dataplay.pdf">DataPlay: Interactive Tweaking and Example-driven Correction of Graphical Database Queries </a> </li>
+                <li>Interactive Browsing and Navigation in Relational Databases </li>
+                <li>Optional: <a href="papers/usability.pdf">Making Database Systems Usable</a></li>
+                <li>Optional: <a href="papers/qbo.pdf"> Query By Output </a></li>
+                <li>Optional: <a href="papers/snip-suggest.pdf"> Snipsuggest: Context-aware autocompletion for sql </a></li>
+                
+            </ul>
+            <h4> Computational Notebook Tools </h4>
+            <ul>
+              <li>Lux: Always-on Visualization Recommendations</li>
+              <li>mage: Fluid Moves Between Code and Graphical Work in Computational Notebooks</li>
+              <li>Optional: B2: Bridging Code and Interactive Visualization in Computational Notebooks</li>
+            </ul>
+            <h4> Low-Code Data Manipulation Libraries </h4>
+            <ul>
+              <li>Optional: Towards Scalable Dataframe Systems</li>
+              <li>Auto-Suggest: Learning-to-Recommend Data Preparation Steps Using Data Science Notebooks</li>
+            </ul>
+
+
+          <h3> Theme 5: Scalability for Humans (5) </h3>
+            <h4> Approximate Query Processing  </h4>
+            <ul>
+                <li><a href="papers/blinkdb.pdf">BlinkDB: Queries with Bounded Errors and Bounded Response Times on Very Large Data</a></li>
+                <li>AQP++: Connecting Approximate Query Processing With Aggregate Precomputation for Interactive Analytics</li>
+                <li>Optional: <a href="papers/sample+seek.pdf">Sample + Seek: Approximating Aggregates with Distribution Precision Guarantee </a></li>
+                <li>Optional: Quickr: Lazily Approximating Complex AdHoc Queries in BigData Clusters</li>
+                <li>Optional: VerdictDB: Universalizing Approximate Query Processing</li>
+                <li>Optional: <a href="papers/now.pdf">Scalable Progressive Analytics on Big Data in the Cloud</a></li>
+                <li>Optional: Experiences with Approximating Queries in Microsoft’s Production Big-Data Clusters</li>
+                <li>Optional: Approximate Query Processing: No Silver Bullet</li>
+            </ul>
+            <h4> Materialization, Reuse, Prediction </h4>
+            <ul>
+                <li>Distributed and Interactive Cube Exploration</li>
+                <li>Optional: Kyrix: Interactive Pan/Zoom Visualizations at Scale</li>                
+            </ul>
+            <h4> Parallel Data Processing </h4>
+            <ul>
+                <li><a href="papers/dremel.pdf">Dremel: Interactive Analysis Of Web-Scale Datasets</a></li>
+                <li>Optional: The Snowflake Elastic Data Warehouse</li>
+                <li>Optional: <a href="papers/spark_sql.pdf">Spark SQL: Relational Data Processing in Spark</a></li>  
+                <li>Optional: DuckDB: an Embeddable Analytical Database</li>
+            </ul>
+            <h4> Surveys and Benchmarks </h4>
+            <ul>
+                <li>A Structured Review of Data Management Technology for Interactive Visualization and Analysis</li>
+                <li>Database Benchmarking for Supporting Real-Time Interactive Querying of Large Data</li>
+            </ul>
+
+          <h3> Theme 6: Going Deeper (3) </h3>
+            <h4> Outliers, Explanations, and Provenance </h4>
+            <ul>
+                <li>Scorpion: Explaining Away Outliers in Aggregate Queries</li>
+                <li>Macrobase: Prioritizing attention in fast data</li>
+                <li>Optional: DIFF: A Relational Interface for Large-Scale Data Explanation</li>
+                <li>Optional: <a href="papers/orpheusdb.pdf"> OrpheusDB: Bolt-on Versioning for Relational Databases </a></li>
+                <li>Optional: Fine-Grained Lineage for Safer Notebook Interactions</li>
+                <li>Optional: Smoke: Fine-grained Lineage at Interactive Speed</li>
+            </ul>
+            <h4> Large Language Models for Data Work </h4>
+            <ul>
+                <li><a href="">Can Foundation Models Wrangle Your Data? </a></li>
+                <li>Language Models Enable Simple Systems for Generating Structured Views of Heterogeneous Data Lakes</li>
+            </ul>
+            <h4> Collaborative Query Processing and Data Discovery </h4>
+            <ul>
+                <li>Optional: Finding Related Tables in Data Lakes for Interactive Data Science</li>
+                <li>Optional: <a href="papers/fusion-tables.pdf">Google fusion tables: web-centered data management and collaboration</a></li>
+                <li>Optional: <a href="papers/cqms.pdf">The case for a Collaborative Query Management System</a></li>
+            </ul>
+            <h4> Video Analysis </h4>
+            <ul>
+                <li>Optional: Rekall: Specifying Video Events using Compositions of Spatiotemporal Labels</li>
+                <li>Optional: EVA: A Symbolic Approach to Accelerating Exploratory Video Analytics with Materialized Views</li>
+                <li>Optional: VIVA: An End-to-End System for Interactive Video Analytics</li>
+            </ul>
+            <h4> Machine Learning Systems </h4>
+            <ul>
+                <li>Optional: <a href="papers/madskills.pdf"> MAD Skills: New Analysis Practices for Big Data </a></li>
+                <li>Optional: <a href="papers/mlbase.pdf">MLbase: A Distributed Machine-learning System</a></li>
+                <li>Optional: <a href="papers/bismarck.pdf">Towards a Unified Architecture for in-RDBMS Analytics</a></li>
+                <li>Optional: <a href="papers/graphlab-earlier.pdf">GraphLab: A New Framework For Parallel Machine Learning</a></li>
+            </ul>
+            
+            
+          
         </div>
+      </div>
+
+      <a name="class-review-instructions"></a>
+      <div class="row">
+         <div class="col-md-12">
+          <h2> Instructions for Submitting Class Reviews </h2>
+          <p>
+            For any class where you are not part of the role-playing activity, you may submit a brief review of the paper. 
+            You must use the following link to submit class reviews: <a href="">Link</a>.
+          </p>
+          <p> Remember to cover the 5 key questions: what is the problem, why is it important, what sets it apart from previous work, what are the key technical ideas, what are the main areas of improvement and open issues, all within 500 words.
+          </p>
+          <p> The class reviews must be submitted by <b>midnight the day before class.</b> No late submissions accepted. These reviews will be lightly graded: we just want to make sure you've read the paper enough to contribute in class. </p>
+          <p>You need to submit 10 reviews over the semester, for papers where you are not actively playing one of the presenter roles.</p>
+        </div>
+      </div>
+     
+
+    <a name="presentations-instructions"></a>
+      <div class="row">
+         <div class="col-md-12">
+          <h2> Instructions for the Role Playing/Presentation Activity </h2>
+          <p>
+            This class involves multiple roles adapted
+            originally from <a href="https://colinraffel.com/blog/role-playing-seminar.html">here</a>.
+            The goal of these multiple roles is to ensure that the class is not organized in a one-to-many format (one speaker, many passive listeners), but a
+            many-to-many format (many speakers, many active listeners). 
+          </p>
+          <p>
+          The roles in our class are the following: paper author, peer reviewer, archaeologist, academic researcher, and industry practitioner. </p>
+          <p>
+          The paper author role involves a 15-20 minute presentation, in a conference style talk. Convey what's interesting about the paper: what is the domain, what is the problem, what is wrong with prior work, what is the approach advocated by the paper, how well does it do, etc. 
+          </p>
+          <p>The other four roles are 5 minutes each. Each starts with a one slide summary.
+            <ul>
+              <li> The peer reviewer role describes a full review of the paper for a top venue in the corresponding research area (databases, visualization, HCI, ...). Identifies a summary of the key contributions, and the strong and weak points of the paper. 
+              </li>
+              <li> The archaeologist reports on one older paper that the current paper builds on, and one new paper that the current paper inspires, as a means of situating the paper in the literature. Reporting on more papers are also allowed! </li>
+              <li> The academic researcher proposes one or more follow-on projects that builds on the ideas of the paper. </li>
+              <li> The industry practitioner tries to make an argument for why they should be paid to implement the methods in the paper — and to discuss any benefits and risks. </li>
+            </ul>
+          </p>
+          <p> More details on breakdown, how to sign up, to be announced shortly. </p>
+        </div>
+      </div>
+
+     <a name="grading"></a>
+      <div class="row">
+         <div class="col-md-12">
+           <h2> Grading Policy  </h2>
+             <ul>
+             <li> Class Participation: 50% </li>
+              <ul>
+                <li> Paper Reviews: 15% </li>
+                  <ul>
+                    <li> Due day before class at midnight. Need to submit at least 10 reviews over the semester. Will be lightly graded. You can't "double-dip": the papers where you are a presenter won't count towards your 10 reviews </li>
+                  </ul>  
+                <li> Class Participation: 10% </li>
+                  <ul>
+                    <li> Any participation is good participation (within reason!). We want to have a good discussion as part of the presentations. Feel free to chime in with ideas, concerns, questions, discussion points, etc. </li>
+                  </ul>  
+                <li> Paper Presentation: 25%  </li>
+                  <ul>
+                  <li> You will play the paper author role roughly 1-2 times, and other accessory roles up to 4-5 times. </li>
+                </ul>
+              </ul>
+              <li> Research Project: 50%. A semester-long research project on human-centered data management in teams of 2-3 (1 only in the case of exceptions). </li>
+              <ul>
+               <li> Project Proposal: 5% </li>
+               <li> Intermediate Report: 10% </li>
+               <li> Final Report + Presentation: 35% </li>
+              </ul>
+         </div> 
+      </div>
      
 
         <a name="project"></a>
         <div class="row">
           <div class="col-md-12">
             <h2>Project</h2>
-            <p> As part of this class, you need to complete a semester-long project. The details of the project will be announced later. You are free to look for ideas in your domain of expertise: for instance, if you work in computational journalism, building a new way to browse and manage large collections of textual archives could be a perfectly reasonable project. Either way, you must speak to the instructor to verify that the project is indeed "challenging" enough.
+            <p> As part of this class, you need to complete a semester-long project. Details will be announced shortly. We encourage you to look for ideas in your domain of expertise: for instance, if you work in computational journalism, building a new way to browse and manage large collections of textual archives could be a perfectly reasonable project. Either way, you must speak to the instructor to verify that the project fulfils the needs of the class.
+            </p>
+            <p> One interesting avenue for projects is to revisit data management problems with LLMs in the loop.  
             </p>
             <!--<ol>
               <li> <b> Build an auto-cleaning database: </b> A database that, based on user input, automatically "predicts" missing values in a column using a standard machine learning technique on the remaining columns. A more advanced version of this database can pick the most suited machine learning algorithm that best predicts missing values. </li>
@@ -380,14 +611,24 @@
           </div>
         </div>
 
-        <a name="assignment"></a>
+         <a name="project"></a>
         <div class="row">
           <div class="col-md-12">
-            <h2>Assignments</h2>
-            <p>  To be announced.    </p>
+            <h2>Credits</h2>
+            <p> Paper readings heavily inspired by Eugene Wu (Columbia)'s Human-Data Interaction class. The Role Playing Class Model heavily inspired by Kexin Rong's Human-in-the-loop Data Analysis class.   
+            </p>
+            <!--<ol>
+              <li> <b> Build an auto-cleaning database: </b> A database that, based on user input, automatically "predicts" missing values in a column using a standard machine learning technique on the remaining columns. A more advanced version of this database can pick the most suited machine learning algorithm that best predicts missing values. </li>
+              <li> <b> A graph visualization system: </b> Most graph visualization tools end up displaying a giant mess of links. Build an interactive visualization tool that automatically clusters or samples nodes and edges so that the user is not overwhelmed with the visualization, but the user can interact by zooming in/out in order to get a better sense for the data. Design scalable techniques such that these interactions are seamless. </li>
+              <li> <b> Graph processing language: </b> Most graph processing systems end up focusing on simple algorithms (shortest paths, pagerank) that are not really used by real graph analysts. Study http://snap.stanford.edu/snap/description.html to identify common patterns of accesses made by different network algorithms, and design a wrapper over a relational or graph database that can supports a large fraction of these operations. </li>
+              <li> <b> Correlation-Aware query processing: </b> </li>
+              <li> <b> </li>
+            </ol>
+            -->
           </div>
         </div>
-      </div>
+
+  
     <div id="sidebar"></div>
     <br/><br/>
 
