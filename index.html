@@ -23,6 +23,68 @@
   <!-- Custom styles for this template -->
   <link href="css/offcanvas.css" rel="stylesheet">
   <link href="css/ap.css" rel="stylesheet">
+  <style>
+    /* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: rgb(255, 0, 0);}	
+  10%{color: rgb(255, 111, 0);}	
+	20%{color: rgb(255, 225, 0);}
+  30%{color: rgb(162, 255, 0);}
+	40%{color: rgb(43, 255, 0);}
+  50%{color: rgb(0, 255, 200);}
+	60%{color: rgb(0, 145, 255);}
+  70%{color: rgb(0, 64, 255);}
+  80%{color: rgb(174, 0, 255);}
+  90%{color: rgb(247, 0, 255);}
+	100%{color: rgb(255, 0, 0);}
+}
+
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: rgb(255, 0, 0);}	
+  10%{color: rgb(255, 111, 0);}	
+	20%{color: rgb(255, 225, 0);}
+  30%{color: rgb(162, 255, 0);}
+	40%{color: rgb(43, 255, 0);}
+  50%{color: rgb(0, 255, 200);}
+	60%{color: rgb(0, 145, 255);}
+  70%{color: rgb(0, 64, 255);}
+  80%{color: rgb(174, 0, 255);}
+  90%{color: rgb(247, 0, 255);}
+	100%{color: rgb(255, 0, 0);}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  0%{color: rgb(255, 0, 0);}	
+  10%{color: rgb(255, 111, 0);}	
+	20%{color: rgb(255, 225, 0);}
+  30%{color: rgb(162, 255, 0);}
+	40%{color: rgb(43, 255, 0);}
+  50%{color: rgb(0, 255, 200);}
+	60%{color: rgb(0, 145, 255);}
+  70%{color: rgb(0, 64, 255);}
+  80%{color: rgb(174, 0, 255);}
+  90%{color: rgb(247, 0, 255);}
+	100%{color: rgb(255, 0, 0);}
+}
+    .primer {
+      color: rgb(255, 76, 76);
+    }
+    .primer:hover {
+      /* Chrome, Safari, Opera */
+      -webkit-animation: rainbow 2s infinite; 
+      
+      /* Internet Explorer */
+      -ms-animation: rainbow 1s infinite;
+      
+      /* Standar Syntax */
+      animation: rainbow 1s infinite; 
+    }
+    .primer:visited {
+      color: rgb(255, 76, 76);
+    }
+  </style>
 
 
   <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -172,9 +234,9 @@
                    <td>8/31</td>
                    <td>Primers: Reading Papers and Visualization</td>
                    <td>
-                    <a href="slides/02a-primers-reading-papers.pdf">Papers Primer</a>
+                    <a class="primer" href="slides/02a-primers-reading-papers.pdf">Papers Primer</a>
                     <br/>
-                    <a href="slides/02b-primers-visualization.pdf">Visualization Primer</a></td>
+                    <a class="primer" href="slides/02b-primers-visualization.pdf">Visualization Primer</a></td>
                    <td></td>
                  </tr>
                  <tr>
@@ -215,7 +277,7 @@
                    <td>9/14</td>
                    <td>Falcon: Balancing Interactive Latency and Resolution Sensitivity for Scalable Linked Visualizations</td>
                    <td>
-                    <a href="slides/02d-primers-scalability.pdf">Scalability Primer</a>
+                    <a class="primer" href="slides/02d-primers-scalability.pdf">Scalability Primer</a>
                     <br/>
                     <a href="slides/06-falcon-author.pdf">Paper Author</a>
                     <br/>
@@ -243,9 +305,9 @@
                    <td>9/21</td>
                    <td>Benchmarking Spreadsheet Systems</td>
                    <td>
-                    <a href="slides/08-benchmark-author.pptx">Paper Author</a>
+                    <a class="primer" href="slides/02c-primers-HCI.pdf">HCI Primer</a>
                     <br/>
-                    <a href="slides/02c-primers-HCI.pdf">HCI Primer</a>
+                    <a href="slides/08-benchmark-author.pptx">Paper Author</a>
                    </td>
                    <td></td>
                  </tr>
